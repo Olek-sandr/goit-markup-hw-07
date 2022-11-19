@@ -23,41 +23,7 @@
 }
 
 /* ------Body----- */
-/* !---------------------------------------------------------------------- */
-.card-link,
-.client-link,
-.social-link,
-.container-header .link,
-.address .link,
-button {
-  transition: color 250ms var(--timing-function);
-}
 
-.social-link {
-  transition-property: background-color, color;
-}
-
-.client-link {
-  transition-property: border, color;
-}
-
-.card-link {
-  display: block;
-  transition-property: box-shadow;
-}
-
-button {
-  font-size: 16px;
-  border-radius: 4px;
-  border: none;
-  border: none;
-  cursor: pointer;
-  font-family: inherit;
-  color: var(--white);
-
-  transition-property: background-color, box-shadow, fill;
-}
-/* !---------------------------------------------------------------------- */
 .body {
   color: var(--main-color);
   background-color: var(--white);
@@ -112,6 +78,60 @@ button {
   clip-path: inset(50%);
   margin: -1px;
 }
+
+.current {
+}
+
+img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+/* !-----------------------------TRANSITION-------------------------------------- */
+.card-link,
+.client-link,
+.social-link,
+.container-header .link,
+.address .link,
+button {
+  transition: color 250ms var(--timing-function);
+}
+
+.social-link {
+  transition-property: background-color, color;
+}
+
+.client-link {
+  transition-property: border, color;
+}
+
+.card-link {
+  display: block;
+  transition-property: box-shadow;
+}
+
+button {
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--white);
+
+  transition-property: background-color, box-shadow, fill;
+}
+/* !-----------------------------TRANSITION-END-------------------------------------- */
+
 /* !-----------------------------backdrop----------------------------- */
 .backdrop {
   position: fixed;
@@ -185,7 +205,6 @@ button {
   margin-right: auto;
   margin-bottom: 30px;
   width: 448px;
-  /* outline: 1px solid blue; */
 }
 
 .subscribe-form-uptext {
@@ -334,92 +353,30 @@ button {
   background-color: var(--second-accent);
   box-shadow: 0px 4px 4px 0px #00000026;
 }
-
 /* !-----------------------------backdrop-end----------------------------- */
 
-img {
-  display: block;
-  height: auto;
-  width: 100%;
-}
-
 /* -------------------------------Header------------------------------- */
-.container-header {
+
+.page-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+
+  z-index: 1;
+
+  background-color: var(--white);
+  border: 1px solid #ececec;
+}
+.page-header__nav {
   display: flex;
-  align-items: center;
 }
-
-.nav-header {
-  display: flex;
-}
-
-.logo,
-.footer-logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-}
-
-.logo {
+.page-header__logo {
   color: #000000;
   padding-top: 24px;
   padding-bottom: 25px;
 }
-
-.logo-style {
+.page-header__span {
   color: var(--accent);
-}
-
-.site-nav .link,
-.auth-nav .link {
-  display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  align-items: center;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-
-.site-nav .link {
-  color: var(--main-color);
-}
-
-.auth-nav .link {
-  color: var(--second-color);
-}
-
-.site-nav .link:hover,
-.auth-nav .link:hover,
-.site-nav .link:focus,
-.auth-nav .link:focus {
-  color: var(--accent);
-}
-
-.site-nav .current {
-  position: relative;
-  color: var(--accent);
-}
-
-.site-nav .current::after {
-  position: absolute;
-  content: '';
-  bottom: 0;
-  left: 0;
-
-  content: '';
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-
-  position: absolute;
-  bottom: 0;
-  left: 0;
-
-  background-color: var(--accent);
 }
 
 .site-nav {
@@ -427,6 +384,10 @@ img {
   margin-left: 93px;
 
   gap: 50px;
+}
+.site-nav__item {
+}
+.site-nav__link {
 }
 
 .auth-nav {
@@ -436,23 +397,59 @@ img {
 
   gap: 50px;
 }
-
-.page-header {
-  background-color: var(--white);
-  border: 1px solid #ececec;
+.auth-nav__item {
 }
-
-.contact-icon {
+.auth-nav__link {
+}
+.auth-nav__icon {
   fill: currentColor;
   margin-right: 10px;
 }
 
-.page-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
+.site-nav__link,
+.auth-nav__link {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
-  z-index: 1;
+  align-items: center;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav__link {
+  color: var(--main-color);
+}
+
+.auth-nav__link {
+  color: var(--second-color);
+}
+
+.site-nav__link:hover,
+.auth-nav__link:hover,
+.site-nav__link:focus,
+.auth-nav__link:focus {
+  color: var(--accent);
+}
+
+.site-nav__item .current {
+  position: relative;
+  color: var(--accent);
+}
+
+.site-nav__item .current::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 4px;
+
+  border-radius: 2px;
+  background-color: var(--accent);
 }
 /* -------------------------------Footer------------------------------- */
 
@@ -600,21 +597,6 @@ img {
 /* ?-------------------------------STUSIO------------------------------- */
 
 /* -------------------------------HERO------------------------------- */
-
-.overlay {
-  margin-left: auto;
-  margin-right: auto;
-
-  height: 600px;
-  max-width: 1600px;
-
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/team.jpg);
-  /* background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
-}
-
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -659,6 +641,20 @@ img {
   background-color: var(--second-accent);
 
   cursor: pointer;
+}
+
+.overlay {
+  margin-left: auto;
+  margin-right: auto;
+
+  height: 600px;
+  max-width: 1600px;
+
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/team.jpg);
+  /* background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
 }
 
 /* -----------BENEFITS------------- */
