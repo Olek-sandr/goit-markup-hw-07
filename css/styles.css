@@ -597,50 +597,11 @@ button {
 /* ?-------------------------------STUSIO------------------------------- */
 
 /* -------------------------------HERO------------------------------- */
+
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-}
-
-.hero-title {
-  margin-top: 0;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-
-  width: 696px;
-  color: var(--white);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-/* Main button */
-
-.button-hero {
-  /* display: inline-block; */
-  min-width: 216px;
-  padding: 10px 32px;
-  text-align: center;
-  align-items: center;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-
-  font-weight: 700;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-
-  background: var(--accent);
-}
-
-.button-hero:hover,
-.button-hero:focus {
-  color: var(--white);
-  background-color: var(--second-accent);
-
-  cursor: pointer;
 }
 
 .overlay {
@@ -652,41 +613,64 @@ button {
 
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/team.jpg);
-  /* background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 696px;
+  color: var(--white);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+
+  text-transform: uppercase;
+}
+
+.hero__button {
+  /* display: inline-block; */
+  min-width: 216px;
+
+  padding: 10px 32px;
+  text-align: center;
+  align-items: center;
+
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  background: var(--accent);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.button-hero:hover,
+.button-hero:focus {
+  color: var(--white);
+  background-color: var(--second-accent);
+
+  cursor: pointer;
 }
 
 /* -----------BENEFITS------------- */
 
-.benefits-list .title {
-  margin-top: 0;
-  margin-bottom: 10px;
-  margin-right: 0;
-
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
+.benefits {
 }
 
-.benefits-list p {
-  margin-top: 0;
-  margin-bottom: 0;
-
-  color: var(--second-color);
-  display: inline-block;
-  width: 270px;
-  height: 72px;
-  line-height: 1.71;
-}
-
-.benefits-list {
+.benefits__list {
   display: flex;
   flex-wrap: wrap;
   gap: var(--card-set-gap);
 }
 
-.container-icon-benefits {
+.benefits__item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.benefits__icon-container {
   background-color: #f5f4fa;
   height: 120px;
 
@@ -698,12 +682,29 @@ button {
   justify-content: center;
 }
 
-.icon-benefits {
+.benefits__icon {
   fill: var(--main-color);
 }
 
-.benefits-list .item {
-  flex-basis: calc((100% - 90px) / 4);
+.benefits__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-right: 0;
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.benefits__subtitle {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: var(--second-color);
+  display: inline-block;
+  width: 270px;
+  height: 72px;
+  line-height: 1.71;
 }
 
 /* -----------ACTIVITY------------- */
