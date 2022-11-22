@@ -104,6 +104,59 @@ img {
 .current {
 }
 
+/* --- Sosial --- */
+.social__item {
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+  color: #afb1b8;
+
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+}
+
+.social__link:hover,
+.social__link:focus {
+  background-color: var(--accent);
+  color: #ffffff;
+}
+
+.social__icon {
+  fill: currentColor;
+}
+
+/* ---------------------------- Social-footer ------------------------------- */
+.social-footer {
+  display: inline-block;
+  align-items: flex-start;
+
+  margin-left: 70px;
+}
+
+.social-footer__text {
+  display: block;
+  text-transform: uppercase;
+  color: var(--white);
+
+  margin-bottom: 20px;
+}
+
+.social__item--footer {
+}
+.social__link--footer {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.link {
+}
+.social__icon--footer {
+  fill: var(--white);
+}
+
 /* !-----------------------------TRANSITION-------------------------------------- */
 .card-link,
 .client-link,
@@ -520,36 +573,9 @@ button {
   color: var(--accent);
 }
 
-/* ----------------------------Social-footer------------------------------- */
-.social-footer {
-  display: inline-block;
-  align-items: flex-start;
-
-  margin-left: 70px;
-}
-
-.social-footer__text {
-  display: block;
-  text-transform: uppercase;
-  color: var(--white);
-
-  margin-bottom: 20px;
-}
-
-.social__item {
-}
-.social__link {
-  /* color: rgba(255, 255, 255, 0.1); */
-}
-.link {
-}
-.social__icon {
-  /* fill: var(--white); */
-}
-
-/* -------------------------------Footer-form------------------------------- */
+/* ------------------------------- Footer-form ------------------------------- */
 .footer-form {
-  display: flex;
+  /* display: flex; */
 
   margin-left: 93px;
 }
@@ -557,6 +583,11 @@ button {
 .footer-form__text {
   display: block;
   text-transform: uppercase;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+
   color: var(--white);
 
   margin-bottom: 20px;
@@ -569,6 +600,10 @@ button {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
 
   background-color: #2196f300;
   color: #ffffff4d;
@@ -823,32 +858,6 @@ button {
   font-weight: 400;
 
   margin-bottom: 16px;
-}
-
-/* --- TEAM-Sosial --- */
-.social__item {
-}
-
-.social__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: inherit;
-  color: #afb1b8;
-
-  border-radius: 50%;
-  height: 44px;
-  width: 44px;
-}
-
-.social__link:hover,
-.social__link:focus {
-  background-color: var(--accent);
-  color: #ffffff;
-}
-
-.social__icon {
-  fill: currentColor;
 }
 
 /* ---------- CUSTOMERS ---------- */
