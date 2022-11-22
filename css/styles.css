@@ -148,12 +148,12 @@ img {
 
 .social__item--footer {
 }
-.social__link--footer {
+.social__link--black {
   background-color: rgba(255, 255, 255, 0.1);
 }
 .link {
 }
-.social__icon--footer {
+.social__icon--white {
   fill: var(--white);
 }
 
@@ -577,7 +577,7 @@ button {
 .footer-form {
   /* display: flex; */
 
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .footer-form__text {
@@ -613,7 +613,7 @@ button {
 }
 
 .footer-form__button {
-  display: flex;
+  display: inline-flex;
   align-items: center;
 
   padding-top: 10px;
