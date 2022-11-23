@@ -23,24 +23,6 @@
 }
 
 /* ------Body----- */
-.body {
-  color: var(--main-color);
-  background-color: var(--bc);
-
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-
-  padding-top: 85px;
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1200px;
-}
 
 .container-header {
   display: flex;
@@ -94,14 +76,6 @@
 
 .logo__span {
   color: var(--accent);
-}
-
-img {
-  display: block;
-  height: auto;
-  width: 100%;
-}
-.current {
 }
 
 /* --- Sosial --- */
