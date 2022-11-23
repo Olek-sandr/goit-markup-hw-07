@@ -1,0 +1,48 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--footer-hero);
+}
+
+.footer-nav {
+  width: 231px;
+}
+
+.footer-nav__logo {
+  color: var(--bc);
+
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.address {
+  font-style: normal;
+  font-weight: normal;
+
+  line-height: 1.7;
+}
+
+.addres__list {
+}
+.addres__item {
+}
+
+.addres__item + .addres__item {
+  margin-top: 9px;
+}
+
+.first-link {
+}
+
+.addres__link {
+  color: rgba(255, 255, 255, 0.6);
+
+  &--bc {
+    color: #fff;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
+}
