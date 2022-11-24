@@ -24,65 +24,6 @@
 
 /* ------Body----- */
 
-.social {
-  display: flex;
-  gap: var(--social-list-gap);
-  justify-content: center;
-}
-
-/* --- Sosial --- */
-.social__item {
-}
-
-.social__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: inherit;
-  color: #afb1b8;
-
-  border-radius: 50%;
-  height: 44px;
-  width: 44px;
-}
-
-.social__link:hover,
-.social__link:focus {
-  background-color: var(--accent);
-  color: #ffffff;
-}
-
-.social__icon {
-  fill: currentColor;
-}
-
-/* ---------------------------- Social-footer ------------------------------- */
-.social-footer {
-  display: inline-block;
-  align-items: flex-start;
-
-  margin-left: 70px;
-}
-
-.social-footer__text {
-  display: block;
-  text-transform: uppercase;
-  color: var(--bc);
-
-  margin-bottom: 20px;
-}
-
-.social__item--footer {
-}
-.social__link--black {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-.link {
-}
-.social__icon--bc {
-  fill: var(--bc);
-}
-
 /* !-----------------------------TRANSITION-------------------------------------- */
 .card-link,
 .client-link,
@@ -330,8 +271,6 @@ button {
   box-shadow: 0px 4px 4px 0px #00000026;
 }
 
-/* ---------- */
-
 /* !-----------------------------backdrop-end----------------------------- */
 
 /* -------------------------------Header------------------------------- */
@@ -346,193 +285,12 @@ button {
 /* -------------------------------HERO------------------------------- */
 
 /* -----------BENEFITS------------- */
-.benefits {
-}
-
-.benefits__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--card-set-gap);
-}
-
-.benefits__item {
-  flex-basis: calc((100% - 90px) / 4);
-}
-
-.benefits__icon-container {
-  background-color: #f5f4fa;
-  height: 120px;
-
-  margin-bottom: 30px;
-  border-radius: 4px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.benefits__icon {
-  fill: var(--main-color);
-}
-
-.benefits__title {
-  margin-top: 0;
-  margin-bottom: 10px;
-  margin-right: 0;
-
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
-
-.benefits__subtitle {
-  margin-top: 0;
-  margin-bottom: 0;
-
-  color: var(--second-color);
-  display: inline-block;
-  width: 270px;
-  height: 72px;
-  line-height: 1.71;
-}
 
 /* ----------- ACTIVITY ------------- */
-.activity {
-  padding-top: 0;
-}
-
-.activity__title {
-  margin-top: 0;
-  margin-bottom: 50px;
-  text-align: center;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  color: var(--main-color);
-}
-
-.activity__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--card-set-gap);
-
-  text-align: center;
-}
-
-.activity__item {
-  position: relative;
-  flex-basis: calc((100% - 60px) / 3);
-}
-
-.activity__container-text {
-  position: absolute;
-  bottom: 0;
-
-  width: 100%;
-  left: 0;
-
-  padding-top: 27px;
-  padding-bottom: 27px;
-
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-
-  background-color: rgba(47, 48, 58, 0.8);
-}
-
-.activity__text {
-  color: var(--bc);
-
-  margin: 0;
-  text-transform: uppercase;
-}
 
 /* ------------- TEAM ------------ */
-.team {
-  background-color: #f5f4fa;
-}
-
-.team__title {
-}
-
-.team-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--card-set-gap);
-}
-
-.team-list__item {
-  flex-basis: calc((100% - 90px) / 4);
-
-  background-color: var(--bc);
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0 rgba(0, 0, 0, 0.14),
-    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-}
-
-.team-card {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.team-card__title,
-.team-card__text {
-  margin-top: 0;
-  margin-bottom: 10px;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-
-  text-align: center;
-  color: var(--main-color);
-}
-
-.team-card__text {
-  color: var(--second-color);
-  font-weight: 400;
-
-  margin-bottom: 16px;
-}
 
 /* ---------- CUSTOMERS ---------- */
-.customers {
-}
-.customers__title {
-}
-
-.customers__list {
-  display: flex;
-  gap: var(--card-set-gap);
-}
-
-.customers__item {
-}
-
-.customers__link {
-  display: flex;
-  width: 170px;
-  height: 92px;
-
-  color: #afb1b8;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-
-  align-items: center;
-  justify-content: center;
-}
-
-.customers__icon {
-  fill: currentColor;
-}
-
-.customers__link:hover,
-.customers__link:focus {
-  border-color: var(--accent);
-  color: var(--accent);
-}
 
 /* -------------PORTFOLIO------------ */
 /* main */

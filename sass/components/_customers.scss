@@ -1,0 +1,35 @@
+.customers {
+}
+.customers__title {
+}
+
+.customers__list {
+  display: flex;
+  gap: $card-set-gap;
+}
+
+.customers__item {
+}
+
+.customers__link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  align-items: center;
+  justify-content: center;
+
+  &:hover,
+  &:focus {
+    border-color: $accent;
+    color: $accent;
+  }
+}
+
+.customers__icon {
+  fill: currentColor;
+}

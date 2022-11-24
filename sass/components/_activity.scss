@@ -1,0 +1,52 @@
+.activity {
+  padding-top: 0;
+}
+
+.activity__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: $main-text-color;
+}
+
+.activity__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $card-set-gap;
+
+  text-align: center;
+}
+
+.activity__item {
+  position: relative;
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.activity__container-text {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  left: 0;
+
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.activity__text {
+  color: $bc;
+
+  margin: 0;
+  text-transform: uppercase;
+}

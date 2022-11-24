@@ -22,7 +22,7 @@
   margin-right: auto;
 
   width: 696px;
-  color: var(--bc);
+  color: $bc;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -44,13 +44,13 @@
   line-height: 1.88;
   letter-spacing: 0.06em;
 
-  background: var(--accent);
+  background: $accent;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
   &:hover,
   &:focus {
-    color: var(--bc);
-    background-color: var(--second-accent);
+    color: $bc;
+    background-color: $second-accent;
 
     cursor: pointer;
   }

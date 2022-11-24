@@ -10,7 +10,7 @@
   font-size: 14px;
   line-height: 1.14;
 
-  color: var(--bc);
+  color: $bc;
 
   margin-bottom: 20px;
 }
@@ -52,7 +52,7 @@
   line-height: 1.6;
   letter-spacing: 0.06em;
 
-  background-color: var(--accent);
+  background-color: $accent;
 
   &::after {
     content: '';
@@ -64,7 +64,7 @@
   }
 
   &:hover {
-    background-color: var(--second-accent);
+    background-color: $second-accent;
     box-shadow: 0px 4px 4px 0px #00000026;
   }
 }
