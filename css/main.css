@@ -509,7 +509,6 @@ img {
 }
 .hero__button:hover, .hero__button:focus {
   background-color: #188ce8;
-  cursor: pointer;
 }
 
 .benefits__list {
