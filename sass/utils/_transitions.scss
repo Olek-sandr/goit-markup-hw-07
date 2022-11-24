@@ -1,0 +1,25 @@
+.card-set__link,
+.customers__link,
+.social__link,
+.site-nav__link,
+.auth-nav__link,
+.addres__link,
+button {
+  transition: color 250ms $timing-function;
+}
+
+button {
+  transition-property: background-color, color;
+}
+
+.social__link {
+  transition-property: background-color, color;
+}
+
+.customers__link {
+  transition-property: border, color;
+}
+
+.card-set__link {
+  transition-property: box-shadow;
+}
