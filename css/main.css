@@ -544,7 +544,7 @@ img {
           justify-content: center;
 }
 
-.benefits__title {
+.benefits__subtitle {
   margin-top: 0;
   margin-bottom: 10px;
   margin-right: 0;
@@ -553,7 +553,7 @@ img {
   text-transform: uppercase;
 }
 
-.benefits__subtitle {
+.benefits__text {
   margin-top: 0;
   margin-bottom: 0;
   color: #757575;
