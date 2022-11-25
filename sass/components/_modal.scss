@@ -1,0 +1,99 @@
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  height: 581px;
+  width: 528px;
+
+  border-radius: 4px;
+  background-color: $bc;
+
+  transform: translate(-50%, -50%) scale(1) rotate(360deg);
+  transition: transform 250ms $timing-function;
+
+  .backdrop--is-hidden & {
+    transform: translate(-50%, -50%) scale(0.5) rotate(180deg);
+  }
+}
+
+.modal__button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  height: 30px;
+  width: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  border: 1px solid #0000001a;
+
+  background-color: $bc;
+
+  &:hover,
+  &:focus {
+    fill: $accent;
+  }
+}
+
+.modal__icon-close {
+}
+
+.modal__uptext {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 12px;
+  margin-top: 40px;
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+}
+.subscribe-form {
+}
+.order {
+}
+.subscribe-form-field {
+}
+.order__field {
+}
+.subscribe-form-container-input-icon {
+}
+.order__container {
+}
+.subscribe-form-icon {
+}
+.order__icon {
+}
+.subscribe-form-field-lust {
+}
+.subscribe-form-field-placeholder {
+}
+.order__placeholder {
+}
+.subscribe-form-text-conditions {
+}
+.order-conditions {
+}
+.checkbox {
+}
+.order-conditions__checkbox {
+}
+.checkbox-icon-condotions {
+}
+.order-conditions__icon {
+}
+.subscribe-form-link-conditions {
+}
+.order-conditions__link {
+}
+.subscrib-button {
+}
+.modal__button-order {
+}

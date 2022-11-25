@@ -1,0 +1,149 @@
+.order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  width: 448px;
+}
+
+.order-field {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  margin-bottom: 10px;
+
+  &:focus-within .order__icon {
+    fill: $accent;
+  }
+}
+
+.order-field--margin-bottom {
+  margin-bottom: 20px;
+}
+
+.order-field__title {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  margin-bottom: 4px;
+
+  color: $second-text-color;
+}
+
+.order-field__area {
+  position: relative;
+}
+
+.order-field__input {
+  padding-left: 42px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right: 15px;
+
+  border: 1px solid #21212133;
+  border-radius: 4px;
+
+  height: 40px;
+  width: 100%;
+
+  & {
+    transition: border-color 250ms $timing-function;
+    outline: none;
+  }
+
+  &:focus {
+    border-color: $accent;
+  }
+}
+
+.order__icon {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+
+  transform: translate(-50%, -50%);
+}
+.subscribe-form-field-lust {
+}
+
+.order-field__placeholder {
+  resize: none;
+
+  border: 1px solid #21212133;
+  border-radius: 4px;
+
+  height: 120px;
+  padding: 12px 16px;
+
+  & {
+    transition: border-color 250ms $timing-function;
+    outline: none;
+  }
+
+  &:focus {
+    border-color: $accent;
+  }
+}
+
+.order-conditions {
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  color: $second-text-color;
+}
+
+.order-conditions__checkbox {
+  appearance: none;
+  position: absolute;
+
+  &:checked + .order-conditions__icon {
+    background-color: $accent;
+    border-color: $accent;
+  }
+}
+
+.order-conditions__icon {
+  display: inline-block;
+  border-radius: 4px;
+  border: 2px solid black;
+
+  margin-right: 7px;
+}
+
+.order-conditions__link {
+  display: block;
+  margin-left: 4px;
+
+  color: $accent;
+
+  &:hover,
+  &:focus {
+    color: $second-text-color;
+  }
+}
+
+.modal__button-order {
+  margin-left: 164px;
+
+  height: 50px;
+  width: 200px;
+
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+
+  background-color: $accent;
+
+  &:hover {
+    background-color: $second-accent;
+    box-shadow: 0px 4px 4px 0px #00000026;
+  }
+}

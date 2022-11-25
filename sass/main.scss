@@ -1,5 +1,6 @@
 @import './utils/variables';
 @import './utils/placeholders';
+@import './utils/transitions';
 @import './base/noramalize';
 @import './components/containers';
 @import './components/sections';
@@ -16,4 +17,6 @@
 @import './components/customers';
 @import './components/filtr';
 @import './components/card-set';
-@import './utils/transitions';
+@import './components/backdrop';
+@import './components/modal';
+@import './components/order';
