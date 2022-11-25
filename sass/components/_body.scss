@@ -1,7 +1,7 @@
 .body {
   margin: 0;
-  color: var(--main-color);
-  background-color: var(--bc);
+  color: $main-text-color;
+  background-color: $bc;
 
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
